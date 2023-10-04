@@ -87,8 +87,8 @@ button {
   cursor: pointer;
 }
 
-.input-list button :hover {
-  background: rgb(168, 46, 224);
+.input-list button:hover {
+  background: rgb(184, 72, 236);
 }
 
 .list-container li {
@@ -109,15 +109,32 @@ button {
   background-image: url("/images/circle.png");
   background-size: cover;
   background-position: center;
-  top: 12px;
+  top: 16px;
   left: 8px;
 }
 
 ul li.checked {
-  color: #cccccc;
+  color: #6e6e6e;
   text-decoration: line-through;
 }
 
 ul li.checked::before {
   background-image: url("/images/check.png");
+}
+
+ul li span {
+  position: absolute;
+  right: 0;
+
+  width: 35px;
+  height: 35px;
+  font-size: 22px;
+  color: rgb(0, 0, 0);
+  line-height: 35px;
+  text-align: center;
+  border-radius: 25%;
+}
+
+.list-container li span:hover {
+  background: rgb(222, 222, 218);
 }
